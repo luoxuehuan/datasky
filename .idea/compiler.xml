@@ -22,11 +22,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="datasky" />
+        <module name="aries" />
+        <module name="libra" />
+        <module name="pisces" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="datasky" target="1.5" />
+      <module name="aries" target="1.8" />
+      <module name="datasky" target="1.8" />
+      <module name="libra" target="1.8" />
+      <module name="pisces" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

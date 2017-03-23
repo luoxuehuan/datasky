@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/aries/aries.iml" filepath="$PROJECT_DIR$/aries/aries.iml" />
       <module fileurl="file://$PROJECT_DIR$/datasky.iml" filepath="$PROJECT_DIR$/datasky.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libra/libra.iml" filepath="$PROJECT_DIR$/libra/libra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pisces/pisces.iml" filepath="$PROJECT_DIR$/pisces/pisces.iml" />
     </modules>
   </component>
 </project>
