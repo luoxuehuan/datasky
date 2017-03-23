@@ -1,13 +1,14 @@
 # datasky
 
-> 纯属瞎想的大数据平台
+> 胡编乱凑的大数据平台
 
-## Libra 天平 协议 
+## Libra 天平 协议 交互 权限
 
 - 模块之间通信协议标准规范
 - 后台交互接口 
 - Rest服务
 - DAG图构建
+- 设计模式
 
 ## Aries 牧羊 调度
 
@@ -41,7 +42,7 @@
 
 ## Gemini 双子 通信
 
-datasky底层通信系统封装。
+datasky底层通信系统封装。Netty NIO
 
 ## Scorpio 天蝎 可视化模块
 

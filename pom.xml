@@ -12,6 +12,7 @@
         <module>libra</module>
         <module>aries</module>
         <module>pisces</module>
+        <module>leo</module>
     </modules>
 
     <repositories>

@@ -32,11 +32,8 @@ public class App {
                       @QueryParam("size") @DefaultValue("10") int size) {
 
         logger.debug("输入信息为{},输入参数为{}",word,size);
-        logger.error("出错");
-        logger.info("dd");
-
         Map<String,String> resultMap = new LinkedHashMap<>();
-        resultMap.put("a","b");
+        resultMap.put("a","disease");
         List<Map> resultMapList = new ArrayList<>();
         resultMapList.add(resultMap);
         return JSON.toJSONString(resultMapList);
@@ -47,10 +44,14 @@ public class App {
         try {
             ResourceConfig config = new ResourceConfig();
             config.register(App.class);
+            /**
+             * 新的controller,需要在这里注册。
+             */
+            config.register(ElasticRouter.class);
             config.register(MultiPartFeature.class);
             HttpServer server = GrizzlyHttpServerFactory.createHttpServer(baseUri, config);
             server.start();
-            System.out.println("启动Rest服务成功");
+            logger.info("启动Rest服务成功");
         } catch (Exception e) {
             e.printStackTrace();
         }
