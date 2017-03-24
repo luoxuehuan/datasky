@@ -22,12 +22,13 @@
 - 供前台sql查询等。
 - 定义计算规则，创建计算任务。
 
-## Virgo 处女 运维监控报警
+## Virgo 处女 运维监控报警 日志解析
 
 - gaganlia
 - nagios
 - 监控Kafka
 - 监控磁盘
+- elk 日志解析
 
 ## Cancer 巨蟹 ETL
 

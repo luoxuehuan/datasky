@@ -25,7 +25,11 @@
             <artifactId>hanlp</artifactId>
             <version>portable-1.3.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.dtwave</groupId>
+            <artifactId>common</artifactId>
+            <version>1.1.1</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
