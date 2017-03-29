@@ -13,6 +13,8 @@
         <module>aries</module>
         <module>pisces</module>
         <module>leo</module>
+        <module>capricorn</module>
+        <module>aquarius</module>
     </modules>
 
     <repositories>
