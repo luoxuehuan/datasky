@@ -1,32 +1,24 @@
-package com.hulb.leo.java;
+package com.hulb.study.javastudy;
+
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Created by hulb on 17/3/23.
+ * Created by hulb on 17/3/30.
  */
+public class Java8Study {
 
-/**
- 流的操作
- 接下来，当把一个数据结构包装成 Stream 后，就要开始对里面的元素进行各类操作了。常见的操作可以归类如下。
- Intermediate：(中间的 transform)
- map (mapToInt, flatMap 等)、 filter、 distinct、 sorted、 peek、 limit、 skip、 parallel、 sequential、 unordered
- Terminal：（终端的 action）
- forEach、 forEachOrdered、 toArray、 reduce、 collect、 min、 max、 count、 anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 iterator
- Short-circuiting：（短-环形 回路）
- anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 limit
- 我们下面看一下 Stream 的比较典型用法。
- */
-public class ExamplesJava8 {
-
-    public static void main(String[] args) {
-        groupingBy();
-    }
+    //private static Logger logger = LoggerFactory.getLogger(Java8Study.class);
 
 
-    public static void forEachMap() {
+    @Test
+    public  void forEachMap() {
+       System.out.println("==========================forEachMap=================================");
         Map<String, Integer> items = new HashMap<>();
         items.put("A", 10);
         items.put("B", 20);
@@ -45,7 +37,9 @@ public class ExamplesJava8 {
         });
     }
 
-    public static void forEachList() {
+    @Test
+    public  void forEachList() {
+        System.out.println("==========================forEachList=================================");
         List<String> items = new ArrayList<>();
         items.add("A");
         items.add("B");
@@ -74,7 +68,9 @@ public class ExamplesJava8 {
         items.stream().forEach(System.out::println);
     }
 
-    public static void groupingBy( ){
+    @Test
+    public  void groupingBy( ){
+        System.out.println("==========================groupingBy=================================");
 
         List<String> items = Arrays.asList("apple","banala","apple");
         Map<String,Long> result = items.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
@@ -96,22 +92,30 @@ public class ExamplesJava8 {
      *
      * 数据源本身可以是无限的。
      */
-    public static void sortAndGet(){
+    @Test
+    public  void sortAndGet(){
 
-        /*
-        List<Integer> transactionsIds = transactions.parallelStream().
-                filter(t -> t.getType() == Transaction.GROCERY).
-                sorted(comparing(Transaction::getValue).reversed()).
-                map(Transaction::getId).
-                collect(toList());
 
-        */
+//        List<Integer> transactionsIds = transactions.parallelStream().
+//                filter(t -> t.getType() == Transaction.GROCERY).
+//                sorted(comparing(Transaction::getValue).reversed()).
+//                map(Transaction::getId).
+//                collect(toList());
+//
+//
     }
 
-    public static void map(){
+    @Test
+    public  void map(){
+        System.out.println("==========================map=================================");
         List<Integer> nums = Arrays.asList(1, 2, 3, 4);
         List<Integer> squareNums = nums.stream().
                 map(n -> n * n).
                 collect(Collectors.toList());
+
+        squareNums.stream().forEach(System.out::println);
     }
+
+
+
 }

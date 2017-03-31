@@ -12,6 +12,7 @@
         <module name="leo" />
         <module name="libra" />
         <module name="pisces" />
+        <module name="virgo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="leo" target="1.8" />
       <module name="libra" target="1.8" />
       <module name="pisces" target="1.8" />
+      <module name="virgo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

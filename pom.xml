@@ -15,6 +15,7 @@
         <module>leo</module>
         <module>capricorn</module>
         <module>aquarius</module>
+        <module>virgo</module>
     </modules>
 
     <repositories>
