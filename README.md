@@ -49,12 +49,12 @@ datasky底层通信系统封装。Netty NIO
 
 - 将Hive查询结果 可视化成图标
 
-## Pisces 双鱼 Web界面
+## [Pisces 双鱼 Web界面](https://github.com/luoxuehuan/datasky/tree/master/pisces)
 
 - 在线编辑器 继承或实现相应类 即可 编写自己的类 并执行。
 - 运维监控。
 
-## Aquarius 水瓶 存储
+## [Aquarius 水瓶 存储](https://github.com/luoxuehuan/datasky/tree/master/aquarius)
 
 
 - HDFS 存储
