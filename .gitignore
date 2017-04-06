@@ -1,0 +1,32 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Maven template
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Exclude maven wrapper
+!/.mvn/wrapper/maven-wrapper.jar
+
+.DS_Store
+.idea/
+datasky.iml
+aquarius/aquarius.iml
+aquarius/target
+aries/aries.iml
+aries/target/
+capricorn/capricorn.iml
+capricorn/target/
+leo/leo.iml
+leo/target
+libra/libra.iml
+libra/target
+pisces/pisces.iml
+pisces/target
+virgo/virgo.iml
+virgo/target

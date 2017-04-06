@@ -34,9 +34,7 @@ public class ExamplesJava8 {
         items.put("D", 40);
         items.put("E", 50);
         items.put("F", 60);
-
         items.forEach((k, v) -> System.out.println("Item : " + k + " Count : " + v));
-
         items.forEach((k, v) -> {
             System.out.println("Item : " + k + " Count : " + v);
             if ("E".equals(k)) {
@@ -104,7 +102,6 @@ public class ExamplesJava8 {
                 sorted(comparing(Transaction::getValue).reversed()).
                 map(Transaction::getId).
                 collect(toList());
-
         */
     }
 
